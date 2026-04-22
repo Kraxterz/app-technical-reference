@@ -1,0 +1,71 @@
+# =========================
+
+# OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Environment variables
+
+# =========================
+
+.env
+.env.*
+*.env
+
+# =========================
+
+# Logs
+
+# =========================
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+
+# IDE / Editors
+
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+
+# Node (future tooling / CLI / validation)
+
+# =========================
+
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# =========================
+
+# Build / output
+
+# =========================
+
+dist/
+build/
+coverage/
+
+# =========================
+
+# Misc
+
+# =========================
+
+.cache/
+.temp/

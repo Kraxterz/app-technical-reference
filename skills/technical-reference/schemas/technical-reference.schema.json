@@ -1,0 +1,113 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"title": "Technical Reference Document",
+"type": "object",
+
+"required": [
+"documentMetadata",
+"technicalStack",
+"shopifySurfaceArea",
+"validationStatus"
+],
+
+"properties": {
+
+
+"documentMetadata": {
+  "type": "object",
+  "required": [
+    "applicationName",
+    "documentationStandard",
+    "skill",
+    "skillVersion",
+    "lastUpdated"
+  ],
+  "properties": {
+    "applicationName": { "type": "string" },
+    "repository": { "type": "string" },
+    "documentationStandard": { "type": "string" },
+    "skill": { "type": "string" },
+    "skillVersion": { "type": "string" },
+    "lastUpdated": { "type": "string" },
+    "currentStatus": { "type": "string" }
+  },
+  "additionalProperties": true
+},
+
+"technicalStack": {
+  "type": "object",
+  "properties": {
+    "runtime": { "type": "string" },
+    "framework": { "type": "string" },
+    "frontend": { "type": "string" },
+    "backend": { "type": "string" },
+    "database": { "type": "string" }
+  },
+  "additionalProperties": true
+},
+
+"shopifySurfaceArea": {
+  "type": "object",
+  "properties": {
+
+    "apisUsed": {
+      "type": "object",
+      "properties": {
+        "adminApi": { "type": "string" },
+        "storefrontApi": { "type": "string" },
+        "graphQL": { "type": "string" },
+        "rest": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+
+    "authAndSession": {
+      "type": "object",
+      "properties": {
+        "authenticationMethod": { "type": "string" },
+        "sessionStrategy": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+
+    "scopes": {
+      "type": "object",
+      "properties": {
+        "requiredScopes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "webhooks": {
+      "type": "object",
+      "properties": {
+        "topicsUsed": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+
+  },
+  "additionalProperties": true
+},
+
+"validationStatus": {
+  "type": "object",
+  "properties": {
+    "structureMatchesTemplate": { "type": "string" },
+    "shopifySectionsCompleted": { "type": "string" },
+    "readyForImpactAnalysis": { "type": "string" }
+  },
+  "additionalProperties": true
+}
+
+
+},
+
+"additionalProperties": true
+}
