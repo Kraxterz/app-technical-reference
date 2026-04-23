@@ -185,6 +185,21 @@ A valid result of this skill is:
 
 ---
 
+## Validation
+
+After any update to the technical reference:
+
+- Run the validator:
+  node skills/technical-reference/scripts/validate.js
+
+- If validation fails:
+  - Fix all errors
+  - Re-run validation
+
+A task is not complete until validation passes.
+
+---
+
 ## Skill Version
 
 - Version: 1.0.0
