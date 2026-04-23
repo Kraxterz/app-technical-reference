@@ -1,11 +1,10 @@
 ---
-
 name: technical-reference
 description: Enforces a standardized technical reference for Shopify applications to improve structure, consistency, and changelog impact awareness.
 version: 1.0.0
 last_updated: 2026-04-22
 status: stable
-----------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # Technical Reference Skill
 
